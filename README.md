@@ -1,4 +1,4 @@
-# disclaimer
+# Disclaimer
 Disclaimer: Lottery games are based on random chance and it is not possible to predict or guarantee the outcome of a draw using any type of mathematical or statistical model. Predicting a random event is virtually impossible. I am not making any promises nor guarantees that this actually works. This is all for fun and entertainment purposes only. 
 
 # MegaMillions Predictor Python
