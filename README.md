@@ -10,7 +10,7 @@ Here's an example of how you could implement this in Python.
 
 This example uses a linear regression model to predict the output based on the input, but you could try using other types of models to see if they perform better.
 
-# MegaMillion Predictor C++
+# MegaMillion Predictor C++ (Works the best)
 
 The C++ variant of the script seems to work better. It shows the most common winning number in each group. 
 
