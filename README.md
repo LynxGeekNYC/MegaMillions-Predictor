@@ -15,7 +15,7 @@ This example uses a linear regression model to predict the output based on the i
 The C++ variant of the script seems to work better. It shows the most common winning number in each group. 
 
 predictor.cpp - this is a basic varient that predict future numbers based on average (doesn't work that well.)
-predictor-COMP.cpp - this is a basic varient that predicts future numbers based on frequency based on prior results (this seems to get 2-4 numbers correct almost every time
-predictor-JSON.cpp - Same as "-COMP" variant but the data is stored in a JSON file instead of the code itself for better efficiency
+predictor-COM.cpp - this is a basic varient that predicts future numbers based on frequency based on prior results (this seems to get 2-4 numbers correct almost every time
+predictor-JSON.cpp - Same as "-COM" variant but the data is stored in a JSON file instead of the code itself for better efficiency
 
 JSON file with prior winning MegaMillion Lotto results will be available soon
