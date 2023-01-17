@@ -1,5 +1,34 @@
 <?php
 
+// Open the CSV file
+$file = fopen("numbers.csv", "r");
+
+// Initialize an array to store the numbers
+$numbers = array();
+
+// Read the CSV file and add the numbers to the array
+while (($data = fgetcsv($file, 1000, ",")) !== FALSE) {
+    $numbers[] = $data[0];
+}
+
+// Close the CSV file
+fclose($file);
+
+// Count the frequency of each number
+$frequency = array_count_values($numbers);
+
+// Create a chart using the frequency data
+$chart = new ChartJS();
+$chart->type = 'bar';
+$chart->data->labels = array_keys($frequency);
+$chart->data->datasets[] = array(
+    'label' => 'Frequency',
+    'data' => array_values($frequency)
+);
+$chart->options->scales->y->ticks->beginAtZero = true;
+
+// Render the chart
+$chart->render();
 $csv = array_map('str_getcsv', file('results.csv'));
 $numbers = array();
 
